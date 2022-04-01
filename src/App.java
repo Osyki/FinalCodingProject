@@ -40,7 +40,8 @@ public class App {
         }
 
         //print final scores
-        String finalScoreText = "****FINAL SCORE:****\r\n" + "    " + player1.getName() + ": " + player1.getScore() + "\r\n" + "    " + player2.getName() + ": " + player2.getScore() + "\r\n" + "WINNER: ";
+        String finalScoreText = "****FINAL SCORE:****\r\n" + "    " + player1.getName() + ": " + player1.getScore()
+                + "\r\n    " + player2.getName() + ": " + player2.getScore() + "\r\n" + "****WINNER: ";
         if (player1.getScore() > player2.getScore()) {
             finalScoreText += player1.getName();
         } else if (player2.getScore() > player1.getScore()) {
@@ -48,7 +49,7 @@ public class App {
         } else {
             finalScoreText += "Draw";
         }
-        finalScoreText += "\r\n";
-        System.out.println(finalScoreText);
+        finalScoreText += "****\r\n";
+        System.out.print(finalScoreText);
     }
 }
